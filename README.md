@@ -1,27 +1,46 @@
-# LocalZoo
+Doctor Lookup
+======================
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
+#### By Rafael Furry
 
-## Development server
+This is a web app which which keeps track of information on zoo animals.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![Animal List](https://user-images.githubusercontent.com/13779974/32251249-6dcb92ee-be4d-11e7-92f1-a6be6dd5a5d3.png)
+![Result](https://user-images.githubusercontent.com/13779974/32251251-6f619eaa-be4d-11e7-940d-c2de8497c137.png)
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* [JavaScript](https://www.javascript.com/)
+* [Angular](https://angular.io/)
+* [jQuery](https://jquery.com/)
+* [Clarity](https://vmware.github.io/clarity/)
+* [Node.js](https://nodejs.org/en/)
+* [Jasmine](https://jasmine.github.io/)
+* [Karma](https://karma-runner.github.io/1.0/index.html/)
+* [Bower](https://bower.io/)
 
-## Build
+Installation
+------------
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Clone repository
+```
+$ git clone https://github.com/BullThistle/ng-local-zoo.git
+```
 
-## Running unit tests
+Install required dependencies
+```
+$ npm install
+```
+```
+$ bower install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run angular server
+```
+$ ng serve
+```
 
-## Running end-to-end tests
+License
+-------
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+GNU GPL v2. Copyright 2017 **Rafael Furry**
