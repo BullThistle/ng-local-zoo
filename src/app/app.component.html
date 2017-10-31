@@ -1,0 +1,22 @@
+<header class="header-6">
+    <div class="branding">
+      <a (click)="all()" class="brand-logo">Local Zoo</a>
+    </div>
+    <div class="header-nav">
+      <a class="nav-link nav-text" (click)="showAdd()">Add Animal</a>
+    </div>
+</header>
+
+<div class="container">
+  <animal-list
+    *ngIf="focusAll"
+    [animals]="animalsMaster"
+    (editClick)="edit($event)">
+  </animal-list>
+  <edit-animal
+    *ngIf="editAnimal"
+    [animal]="editAnimal"
+    (editDone)="closeEdit()">
+  </edit-animal>
+  <new-animal *ngIf="focusAdd" (addAnimal)="add($event)"></new-animal>
+</div>

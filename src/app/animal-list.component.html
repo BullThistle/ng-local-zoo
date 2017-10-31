@@ -1,0 +1,40 @@
+<h2>Animals</h2>
+
+<clr-dropdown>
+  <button type="button" class="dropdown-toggle btn" clrDropdownTrigger>
+    Age Selection
+    <clr-icon shape="caret down"></clr-icon>
+  </button>
+  <clr-dropdown-menu clrPosition="top-left" *clrIfOpen>
+    <button type="button" value="all" (click)="age($event.target.value)" clrDropdownItem>All Animals</button>
+    <button type="button" value="young" (click)="age($event.target.value)" clrDropdownItem>Young Animals</button>
+    <button type="button" value="mature" (click)="age($event.target.value)" clrDropdownItem>Mature Animals</button>
+  </clr-dropdown-menu>
+</clr-dropdown>
+
+<div class="row" >
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" *ngFor="let animal of animals | age:ageType">
+    <div class="card">
+      <div class="card-header">
+        {{animal.name}}
+      </div>
+      <div class="card-block">
+        <p class="card-text">
+          {{animal.species}}
+        </p>
+      </div>
+      <div class="card-block">
+        <ul class="list-unstyled">
+          <li>Sex: {{animal.sex}}</li>
+          <li>Age: {{animal.age}}</li>
+          <li>Caretakers: {{animal.caretakers}}</li>
+          <li>Like: {{animal.like}}</li>
+          <li>Dislike: {{animal.dislike}}</li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <a (click)="edit(animal)" class="btn btn-primary">Edit</a>
+      </div>
+    </div>
+  </div>
+</div>
