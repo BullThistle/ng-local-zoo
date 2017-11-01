@@ -1,8 +1,6 @@
 Local Zoo
 ======================
 
-#### By Rafael Furry
-
 This is a web app which which keeps track of information on zoo animals.
 
 ![Animal List](https://user-images.githubusercontent.com/13779974/32251249-6dcb92ee-be4d-11e7-92f1-a6be6dd5a5d3.png)
